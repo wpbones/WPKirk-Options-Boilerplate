@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('ABSPATH')) {
-    exit();
+  exit();
 }
 
 /*
@@ -15,4 +15,6 @@ if (!defined('ABSPATH')) {
 |
 */
 
-return [];
+return [
+  'sample' => __('Hello, Captain!', 'wp-kirk'),
+];

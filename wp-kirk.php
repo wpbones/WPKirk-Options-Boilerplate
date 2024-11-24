@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Plugin Name: WP Kirk Boilerplate
- * Plugin URI: https://github.com/wpbones/WPKirk-Boilerplate
+ * Plugin Name: WP Kirk Options Boilerplate
+ * Plugin URI: https://github.com/wpbones/WPKirk-Options-Boilerplate
  * Description: WP Bones Boilerplate WordPress plugin
  * Version: 1.8.0
  * Requires at least: 6.2

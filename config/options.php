@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('ABSPATH')) {
-    exit();
+  exit();
 }
 
 /*
@@ -16,4 +16,19 @@ if (!defined('ABSPATH')) {
 |
 */
 
-return [];
+return [
+  'version' => '1.0',
+  'General' => [
+    'option_1' => 'true',
+    'option_2' => 'true',
+    'option_3' => [
+      'sub_option_of_3' => __('Hello', 'wp-kirk'),
+    ],
+    'option_4' => 'to delete',
+    'option_5' => null
+  ],
+
+  'Special' => [
+    'Name' => 'James Kirk',
+  ],
+];
