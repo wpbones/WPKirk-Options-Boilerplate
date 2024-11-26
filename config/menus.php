@@ -16,17 +16,32 @@ if (!defined('ABSPATH')) {
 
 return [
   'wp_kirk_slug_menu' => [
-    "page_title" => "WP Kirk Page",
-    "menu_title" => "WP Kirk Menu",
+    "page_title" => "WP Kirk Options",
+    "menu_title" => "WP Kirk Options",
     'capability' => 'read',
     'icon' => 'wpbones-logo-menu.png',
     'items' => [
       [
-        "page_title" => "Main View",
-        "menu_title" => "Main View",
+        "menu_title" => __('Options', 'wp-kirk'),
         'capability' => 'read',
         'route' => [
-          'get' => 'Dashboard\DashboardController@index'
+          'get' => 'Options\OptionController@index'
+        ],
+      ],
+      [
+        "menu_title" => __('Options View', 'wp-kirk'),
+        'capability' => 'read',
+        'route' => [
+          'get' => 'Options\OptionViewController@index',
+          'post' => 'Options\OptionViewController@saveOptions',
+        ],
+      ],
+      [
+        "menu_title" => __('Options Resource', 'wp-kirk'),
+        'capability' => 'read',
+        'route' => [
+          'load' => 'Options\OptionResourceController@load',
+          'resource' => 'Options\OptionResourceController',
         ],
       ],
     ]

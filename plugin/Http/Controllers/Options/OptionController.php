@@ -1,6 +1,6 @@
 <?php
 
-namespace WPKirk\Http\Controllers\Dashboard;
+namespace WPKirk\Http\Controllers\Options;
 
 use WPKirk\Http\Controllers\Controller;
 
@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
   exit();
 }
 
-class DashboardController extends Controller
+class OptionController extends Controller
 {
   public function index()
   {
@@ -16,7 +16,6 @@ class DashboardController extends Controller
       ->view('dashboard.index')
       ->withAdminStyle('prism')
       ->withAdminScript('prism')
-      ->withAdminStyle('wp-kirk-common')
-      ->withAdminAppsScript('app');
+      ->withAdminStyle('wp-kirk-common');
   }
 }
