@@ -2,10 +2,10 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Kirk Boilerplate 1.6.0\n"
+"Project-Id-Version: WP Kirk Options Boilerplate 1.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-kirk\n"
-"POT-Creation-Date: 2024-11-12T12:11:09+00:00\n"
-"PO-Revision-Date: 2024-11-12 13:11+0100\n"
+"POT-Creation-Date: 2024-11-29T14:22:31+00:00\n"
+"PO-Revision-Date: 2024-11-29 15:25+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it\n"
@@ -17,13 +17,13 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: wp-kirk.php
-msgid "WP Kirk Boilerplate"
-msgstr "WP Kirk Boilerplate"
+msgid "WP Kirk Options Boilerplate"
+msgstr "WP Kirk Opzioni Boilerplate"
 
 #. Plugin URI of the plugin
 #: wp-kirk.php
-msgid "https://github.com/wpbones/WPKirk-Boilerplate"
-msgstr "https://github.com/wpbones/WPKirk-Boilerplate"
+msgid "https://github.com/wpbones/WPKirk-Options-Boilerplate"
+msgstr "https://github.com/wpbones/WPKirk-Options-Boilerplate"
 
 #. Description of the plugin
 #: wp-kirk.php
@@ -40,21 +40,289 @@ msgstr "Giovambattista Fazioli"
 msgid "https://wpbones.com/"
 msgstr "https://wpbones.com/"
 
-#: resources/views/dashboard/index.php:13
-msgid "Config Menu"
-msgstr "Menu di configurazione"
+#: config/custom.php:19
+msgid "Hello, Captain!"
+msgstr "Salve, Capitano!"
 
-#: resources/views/dashboard/index.php:17
+#: config/menus.php:25
+msgid "Options"
+msgstr "Opzioni"
+
+#: config/menus.php:32
+msgid "Options View"
+msgstr "Visualizzazione opzioni"
+
+#: config/menus.php:40
+msgid "Options Resource"
+msgstr "Risorsa Opzioni"
+
+#: config/options.php:25
+msgid "Hello"
+msgstr "Ciao"
+
+#: resources/views/dashboard/index.php:20
+#: resources/views/dashboard/resource.php:20
+#: resources/views/dashboard/view.php:20
+msgid "Overview"
+msgstr "Panoramica"
+
+#: resources/views/dashboard/index.php:23
+msgid "You can define the plugin options in the `options.php` file."
+msgstr "È possibile definire le opzioni del plugin nel file 'options.php'."
+
+#: resources/views/dashboard/index.php:29
+msgid ""
+"You can always access the plugin instance by using the `$plugin` variable."
+msgstr ""
+"È sempre possibile accedere all'istanza del plug-in utilizzando la variabile "
+"'$plugin'."
+
+#: resources/views/dashboard/index.php:35
+msgid "Get options"
+msgstr "Ottieni opzioni"
+
+#: resources/views/dashboard/index.php:38
+msgid "You can get the options by using the `dot` notation."
+msgstr "È possibile ottenere le opzioni utilizzando la notazione \"punto\"."
+
+#: resources/views/dashboard/index.php:44
+msgid "You can also store `null` values."
+msgstr "È inoltre possibile memorizzare valori 'null'."
+
+#: resources/views/dashboard/index.php:50
+msgid "Get options by an array"
+msgstr "Ottenere opzioni da un array"
+
+#: resources/views/dashboard/index.php:53
+msgid "You may also retrieve an option sub-branch as an `Array`."
+msgstr "È anche possibile recuperare un sottoramo di opzione come 'Array'."
+
+#: resources/views/dashboard/index.php:59
+msgid "as well as"
+msgstr "così come"
+
+#: resources/views/dashboard/index.php:65
+msgid "Get option directly"
+msgstr "Ottieni direttamente l'opzione"
+
+#: resources/views/dashboard/index.php:68
+msgid "You can also get the options without using the `get` method."
+msgstr "Puoi anche ottenere le opzioni senza utilizzare il metodo \"get\"."
+
+#: resources/views/dashboard/index.php:74
+msgid "Get default value"
+msgstr "Ottenere il valore predefinito"
+
+#: resources/views/dashboard/index.php:77
+msgid ""
+"Of course, you can also get the default value if the option does not exist."
+msgstr ""
+"Naturalmente, puoi anche ottenere il valore predefinito se l'opzione non "
+"esiste."
+
+#: resources/views/dashboard/index.php:83
+msgid "Add new option"
+msgstr "Aggiungi nuova opzione"
+
+#: resources/views/dashboard/index.php:86
+msgid "You can add a new option by using the `set` method."
+msgstr "È possibile aggiungere una nuova opzione utilizzando il metodo 'set'."
+
+#: resources/views/dashboard/index.php:93
+msgid "You can also add new entry options with `null` value."
+msgstr ""
+"È inoltre possibile aggiungere nuove opzioni di immissione con valore "
+"'nullo'."
+
+#: resources/views/dashboard/index.php:100
+msgid "Of course, you can also add a new option by using the `Array` notation."
+msgstr ""
+"Naturalmente, è possibile aggiungere una nuova opzione utilizzando la "
+"notazione 'Array'."
+
+#: resources/views/dashboard/index.php:107
+msgid "Of course, you can also add a new option starting from the root."
+msgstr ""
+"Naturalmente, puoi anche aggiungere una nuova opzione partendo dalla radice."
+
+#: resources/views/dashboard/index.php:114
+msgid "Update an option"
+msgstr "Aggiornare un'opzione"
+
+#: resources/views/dashboard/index.php:117
+msgid ""
+"You can update any option and branch tree in the same way, by using the dot "
+"notation"
+msgstr ""
+"È possibile aggiornare qualsiasi opzione e albero di ramificazione allo "
+"stesso modo, utilizzando la notazione a punti"
+
+#: resources/views/dashboard/index.php:124
+msgid "By using the `Array` notation"
+msgstr "Utilizzando la notazione 'Array'"
+
+#: resources/views/dashboard/index.php:131
+msgid "You can also change the type of the value."
+msgstr "È inoltre possibile modificare il tipo di valore."
+
+#: resources/views/dashboard/index.php:138
+msgid "Mass insert and update"
+msgstr "Inserimento e aggiornamento di massa"
+
+#: resources/views/dashboard/index.php:141
+msgid ""
+"In accordance with the options structure, you may also update a whole subset "
+"of options instead of changing\n"
+"          them individually."
+msgstr ""
+"In conformità con la struttura delle opzioni, è possibile aggiornare un "
+"intero sottoinsieme di opzioni invece di modificarle\n"
+"          individualmente."
+
+#: resources/views/dashboard/index.php:157
+msgid "Of course, you may use the mass feature for the insert as well"
+msgstr ""
+"Naturalmente, è possibile utilizzare la funzione di massa anche per l'inserto"
+
+#: resources/views/dashboard/index.php:172
+msgid "Delete option"
+msgstr "Cancella opzione"
+
+#: resources/views/dashboard/index.php:175
+msgid "To delete an option, you have to use the `delete` method."
+msgstr "Per eliminare un'opzione, è necessario utilizzare il metodo 'delete'."
+
+#: resources/views/dashboard/index.php:182
+msgid "Delete all"
+msgstr "Cancella tutto"
+
+#: resources/views/dashboard/index.php:185
+msgid "Finally, you can delete all options."
+msgstr "Infine, puoi eliminare tutte le opzioni."
+
+#: resources/views/dashboard/index.php:192
+msgid "Reset"
+msgstr "Reset"
+
+#: resources/views/dashboard/index.php:195
+msgid "Don't worry, you can reset the options to the default values."
+msgstr "Non preoccuparti, puoi ripristinare le opzioni ai valori predefiniti."
+
+#: resources/views/dashboard/resource.php:23
+msgid ""
+"Here we are going to use the resource approach to handle the form submission."
+msgstr ""
+"Qui utilizzeremo l'approccio delle risorse per gestire l'invio del modulo."
+
+#: resources/views/dashboard/resource.php:27
+#: resources/views/dashboard/view.php:27
+msgid "Menus"
+msgstr "Menu"
+
+#: resources/views/dashboard/resource.php:30
+#: resources/views/dashboard/view.php:30
+msgid "In the `menus.php` file you can define the menu items."
+msgstr "Nel file 'menus.php' è possibile definire le voci di menu."
+
+#: resources/views/dashboard/resource.php:36
+msgid ""
+"At line `43` and `44` we have defined the `load` and `resource`menu item "
+"routes."
+msgstr ""
+"Alle righe '43' e '44' abbiamo definito gli itinerari delle voci di menu "
+"'carico' e 'risorsa'."
+
+#: resources/views/dashboard/resource.php:40
+#: resources/views/dashboard/view.php:40
 msgid "Controller"
 msgstr "Controllore"
 
-#: resources/views/dashboard/index.php:25
-msgid "PHP Version"
-msgstr "Versione PHP"
+#: resources/views/dashboard/resource.php:43
+msgid ""
+"In the `OptionResourceController.php` file you will find several methods to "
+"handle the form submission."
+msgstr ""
+"Nel file 'OptionResourceController.php' troverai diversi metodi per gestire "
+"l'invio del modulo."
 
-#: resources/views/dashboard/index.php:29
-msgid "ReactJS Application"
-msgstr "Applicazione ReactJS"
+#: resources/views/dashboard/resource.php:49
+msgid "Method"
+msgstr "Metodo"
+
+#: resources/views/dashboard/resource.php:52
+msgid ""
+"We can use the `$method` injected variable to display the current method."
+msgstr ""
+"Possiamo usare la variabile iniettata '$method' per visualizzare il metodo "
+"corrente."
+
+#: resources/views/dashboard/view.php:23
+msgid "Here you can try the ability to handle a form for the options."
+msgstr "Qui puoi provare la capacità di gestire un modulo per le opzioni."
+
+#: resources/views/dashboard/view.php:36
+msgid ""
+"At line `36` we have the `post` menu item route which will be used to handle "
+"the form update."
+msgstr ""
+"Alla riga '36' abbiamo la voce di menu 'post' route che verrà utilizzata per "
+"gestire l'aggiornamento del modulo."
+
+#: resources/views/dashboard/view.php:43
+msgid ""
+"In the `OptionViewController.php` file you will find the method "
+"`saveOptions` which will handle the form submission."
+msgstr ""
+"Nel file 'OptionViewController.php' troverai il metodo 'saveOptions' che "
+"gestirà l'invio del modulo."
+
+#: resources/views/dashboard/view.php:49
+msgid "We will use the `verifyNonce()` method to verify the nonce."
+msgstr "Utilizzeremo il metodo 'verifyNonce()' per verificare il nonce."
+
+#: resources/views/dashboard/view.php:52
+msgid ""
+"And we will use the `getAsOptions()` method to get the form fields as "
+"options."
+msgstr ""
+"E useremo il metodo 'getAsOptions()' per ottenere i campi del modulo come "
+"opzioni."
+
+#: resources/views/dashboard/view.php:56
+msgid "View Form"
+msgstr "Visualizza modulo"
+
+#: resources/views/dashboard/view.php:61
+msgid ""
+"Here we're using a very useful HTML markup to display and handle the form "
+"fields. First of all, we are going to set up the nonce field."
+msgstr ""
+"Qui stiamo utilizzando un markup HTML molto utile per visualizzare e gestire "
+"i campi del modulo. Prima di tutto, imposteremo il campo nonce."
+
+#: resources/views/dashboard/view.php:67
+msgid ""
+"Then we will use `$feedback` injected variable to display a message if the "
+"form was submitted."
+msgstr ""
+"Quindi utilizzeremo la variabile iniettata '$feedback' per visualizzare un "
+"messaggio se il modulo è stato inviato."
+
+#: resources/views/dashboard/view.php:71
+msgid ""
+"We will use a `div` with class `updated notice is-dismissible` to display "
+"the message on the top of the page."
+msgstr ""
+"Useremo un 'div' con la classe 'l'avviso aggiornato è-ignorabile' per "
+"visualizzare il messaggio nella parte superiore della pagina."
+
+#: resources/views/dashboard/view.php:127
+msgid "Try it"
+msgstr "Provalo"
+
+#: resources/views/dashboard/view.php:182
+msgid "The current options are:"
+msgstr "Le opzioni attuali sono:"
 
 #: public/apps/app.js:1
 msgid "Say Hello, WP Bones Application"

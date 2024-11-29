@@ -2,26 +2,26 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Kirk Boilerplate 1.6.0\n"
+"Project-Id-Version: WP Kirk Options Boilerplate 1.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-kirk\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-12T12:11:09+00:00\n"
+"POT-Creation-Date: 2024-11-29T14:22:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: wp-kirk\n"
 
 #. Plugin Name of the plugin
 #: wp-kirk.php
-msgid "WP Kirk Boilerplate"
+msgid "WP Kirk Options Boilerplate"
 msgstr ""
 
 #. Plugin URI of the plugin
 #: wp-kirk.php
-msgid "https://github.com/wpbones/WPKirk-Boilerplate"
+msgid "https://github.com/wpbones/WPKirk-Options-Boilerplate"
 msgstr ""
 
 #. Description of the plugin
@@ -39,20 +39,231 @@ msgstr ""
 msgid "https://wpbones.com/"
 msgstr ""
 
-#: resources/views/dashboard/index.php:13
-msgid "Config Menu"
+#: config/custom.php:19
+msgid "Hello, Captain!"
 msgstr ""
 
-#: resources/views/dashboard/index.php:17
-msgid "Controller"
+#: config/menus.php:25
+msgid "Options"
 msgstr ""
 
-#: resources/views/dashboard/index.php:25
-msgid "PHP Version"
+#: config/menus.php:32
+msgid "Options View"
+msgstr ""
+
+#: config/menus.php:40
+msgid "Options Resource"
+msgstr ""
+
+#: config/options.php:25
+msgid "Hello"
+msgstr ""
+
+#: resources/views/dashboard/index.php:20
+#: resources/views/dashboard/resource.php:20
+#: resources/views/dashboard/view.php:20
+msgid "Overview"
+msgstr ""
+
+#: resources/views/dashboard/index.php:23
+msgid "You can define the plugin options in the `options.php` file."
 msgstr ""
 
 #: resources/views/dashboard/index.php:29
-msgid "ReactJS Application"
+msgid "You can always access the plugin instance by using the `$plugin` variable."
+msgstr ""
+
+#: resources/views/dashboard/index.php:35
+msgid "Get options"
+msgstr ""
+
+#: resources/views/dashboard/index.php:38
+msgid "You can get the options by using the `dot` notation."
+msgstr ""
+
+#: resources/views/dashboard/index.php:44
+msgid "You can also store `null` values."
+msgstr ""
+
+#: resources/views/dashboard/index.php:50
+msgid "Get options by an array"
+msgstr ""
+
+#: resources/views/dashboard/index.php:53
+msgid "You may also retrieve an option sub-branch as an `Array`."
+msgstr ""
+
+#: resources/views/dashboard/index.php:59
+msgid "as well as"
+msgstr ""
+
+#: resources/views/dashboard/index.php:65
+msgid "Get option directly"
+msgstr ""
+
+#: resources/views/dashboard/index.php:68
+msgid "You can also get the options without using the `get` method."
+msgstr ""
+
+#: resources/views/dashboard/index.php:74
+msgid "Get default value"
+msgstr ""
+
+#: resources/views/dashboard/index.php:77
+msgid "Of course, you can also get the default value if the option does not exist."
+msgstr ""
+
+#: resources/views/dashboard/index.php:83
+msgid "Add new option"
+msgstr ""
+
+#: resources/views/dashboard/index.php:86
+msgid "You can add a new option by using the `set` method."
+msgstr ""
+
+#: resources/views/dashboard/index.php:93
+msgid "You can also add new entry options with `null` value."
+msgstr ""
+
+#: resources/views/dashboard/index.php:100
+msgid "Of course, you can also add a new option by using the `Array` notation."
+msgstr ""
+
+#: resources/views/dashboard/index.php:107
+msgid "Of course, you can also add a new option starting from the root."
+msgstr ""
+
+#: resources/views/dashboard/index.php:114
+msgid "Update an option"
+msgstr ""
+
+#: resources/views/dashboard/index.php:117
+msgid "You can update any option and branch tree in the same way, by using the dot notation"
+msgstr ""
+
+#: resources/views/dashboard/index.php:124
+msgid "By using the `Array` notation"
+msgstr ""
+
+#: resources/views/dashboard/index.php:131
+msgid "You can also change the type of the value."
+msgstr ""
+
+#: resources/views/dashboard/index.php:138
+msgid "Mass insert and update"
+msgstr ""
+
+#: resources/views/dashboard/index.php:141
+msgid ""
+"In accordance with the options structure, you may also update a whole subset of options instead of changing\n"
+"          them individually."
+msgstr ""
+
+#: resources/views/dashboard/index.php:157
+msgid "Of course, you may use the mass feature for the insert as well"
+msgstr ""
+
+#: resources/views/dashboard/index.php:172
+msgid "Delete option"
+msgstr ""
+
+#: resources/views/dashboard/index.php:175
+msgid "To delete an option, you have to use the `delete` method."
+msgstr ""
+
+#: resources/views/dashboard/index.php:182
+msgid "Delete all"
+msgstr ""
+
+#: resources/views/dashboard/index.php:185
+msgid "Finally, you can delete all options."
+msgstr ""
+
+#: resources/views/dashboard/index.php:192
+msgid "Reset"
+msgstr ""
+
+#: resources/views/dashboard/index.php:195
+msgid "Don't worry, you can reset the options to the default values."
+msgstr ""
+
+#: resources/views/dashboard/resource.php:23
+msgid "Here we are going to use the resource approach to handle the form submission."
+msgstr ""
+
+#: resources/views/dashboard/resource.php:27
+#: resources/views/dashboard/view.php:27
+msgid "Menus"
+msgstr ""
+
+#: resources/views/dashboard/resource.php:30
+#: resources/views/dashboard/view.php:30
+msgid "In the `menus.php` file you can define the menu items."
+msgstr ""
+
+#: resources/views/dashboard/resource.php:36
+msgid "At line `43` and `44` we have defined the `load` and `resource`menu item routes."
+msgstr ""
+
+#: resources/views/dashboard/resource.php:40
+#: resources/views/dashboard/view.php:40
+msgid "Controller"
+msgstr ""
+
+#: resources/views/dashboard/resource.php:43
+msgid "In the `OptionResourceController.php` file you will find several methods to handle the form submission."
+msgstr ""
+
+#: resources/views/dashboard/resource.php:49
+msgid "Method"
+msgstr ""
+
+#: resources/views/dashboard/resource.php:52
+msgid "We can use the `$method` injected variable to display the current method."
+msgstr ""
+
+#: resources/views/dashboard/view.php:23
+msgid "Here you can try the ability to handle a form for the options."
+msgstr ""
+
+#: resources/views/dashboard/view.php:36
+msgid "At line `36` we have the `post` menu item route which will be used to handle the form update."
+msgstr ""
+
+#: resources/views/dashboard/view.php:43
+msgid "In the `OptionViewController.php` file you will find the method `saveOptions` which will handle the form submission."
+msgstr ""
+
+#: resources/views/dashboard/view.php:49
+msgid "We will use the `verifyNonce()` method to verify the nonce."
+msgstr ""
+
+#: resources/views/dashboard/view.php:52
+msgid "And we will use the `getAsOptions()` method to get the form fields as options."
+msgstr ""
+
+#: resources/views/dashboard/view.php:56
+msgid "View Form"
+msgstr ""
+
+#: resources/views/dashboard/view.php:61
+msgid "Here we're using a very useful HTML markup to display and handle the form fields. First of all, we are going to set up the nonce field."
+msgstr ""
+
+#: resources/views/dashboard/view.php:67
+msgid "Then we will use `$feedback` injected variable to display a message if the form was submitted."
+msgstr ""
+
+#: resources/views/dashboard/view.php:71
+msgid "We will use a `div` with class `updated notice is-dismissible` to display the message on the top of the page."
+msgstr ""
+
+#: resources/views/dashboard/view.php:127
+msgid "Try it"
+msgstr ""
+
+#: resources/views/dashboard/view.php:182
+msgid "The current options are:"
 msgstr ""
 
 #: public/apps/app.js:1
