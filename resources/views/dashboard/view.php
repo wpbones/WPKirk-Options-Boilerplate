@@ -136,6 +136,7 @@ $evalJson = array_merge($eval, ['language-eval' => 'json']);
 
     <form action="" method="post">
 
+      <?php echo $plugin->csrfField(); ?>
       <?php wp_nonce_field('Options'); ?>
 
       <p>

@@ -54,21 +54,26 @@ $evalJson = array_merge($eval, ['language-eval' => 'json']);
 
     <?php wpkirk_code(
       htmlentities('<form action="" method="post">
+  <?php echo $plugin->csrfField(); ?>
   <button class="button">POST</button>
 </form>
 <form action="" method="post">
+  <?php echo $plugin->csrfField(); ?>
   <input type="hidden" name="_method" value="PUT">
   <button class="button">PUT</button>
 </form>
 <form action="" method="post">
+  <?php echo $plugin->csrfField(); ?>
   <input type="hidden" name="_method" value="PATCH">
   <button class="button">PATCH</button>
 </form>
 <form action="" method="post">
+  <?php echo $plugin->csrfField(); ?>
   <input type="hidden" name="_method" value="DELETE">
   <button class="button">DELETE</button>
 </form>
 <form action="" method="post">
+  <?php echo $plugin->csrfField(); ?>
   <input type="hidden" name="_redirect" value="https://wpbones.com">
   <button class="button">POST with redirect</button>
 </form>'),
@@ -79,21 +84,26 @@ $evalJson = array_merge($eval, ['language-eval' => 'json']);
 
     <div style="display: flex; gap: 8px">
       <form action="#<?php echo $mid ?>" method="post">
+        <?php echo $plugin->csrfField(); ?>
         <button class="button">POST</button>
       </form>
       <form action="#<?php echo $mid ?>" method="post">
+        <?php echo $plugin->csrfField(); ?>
         <input type="hidden" name="_method" value="PUT">
         <button class="button">PUT</button>
       </form>
       <form action="#<?php echo $mid ?>" method="post">
+        <?php echo $plugin->csrfField(); ?>
         <input type="hidden" name="_method" value="PATCH">
         <button class="button">PATCH</button>
       </form>
       <form action="#<?php echo $mid ?>" method="post">
+        <?php echo $plugin->csrfField(); ?>
         <input type="hidden" name="_method" value="DELETE">
         <button class="button">DELETE</button>
       </form>
       <form action="#<?php echo $mid ?>" method="post">
+        <?php echo $plugin->csrfField(); ?>
         <input type="hidden" name="_redirect" value="https://wpbones.com">
         <button class="button">POST with redirect</button>
       </form>
